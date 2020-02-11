@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'bluu-next';
+  src: local('bluu'), url(./fonts/BluuNext-Titling.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'columbia';
+  src: local('columbia-serial-bold'), url(./fonts/columbia-serial-bold.ttf) format('ttf');
+}
+
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  border: 2px solid #40404C;
+  height: 84px;
+  width: 100%;
+  padding: 0 106px;
+}
+
+
+
+.name {
+  font-family: 'bluu-next';
+  color: #40404C;
+  font-size: "20px";
+}
+
+.card {
+  width: 541px;
+  height: 790px;
+  border: 2px solid blue;
+}
+
+.cardName {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  font-family: "columbia";
+color: #40404C;
+  width: 220px;
+
+  border: 2px solid green;
+}
+.cardDescription {
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 27px;
+
+  width: 244px;
+
+  border: 2px solid red;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cardImg {
+  height: 100%;
+  width: 100%;
+  border: 5px solid green;
+
+}
+
+.cardImg img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 6px solid blue;
+
+}
