@@ -3,77 +3,90 @@
 }
 
 @font-face {
-  font-family: 'bluu-next';
-  src: local('bluu'), url(./fonts/BluuNext-Titling.otf) format('otf');
+  font-family: "bluu-next";
+  src: local("bluu"), url(./fonts/BluuNext-Titling.otf) format("otf");
 }
 
 @font-face {
-  font-family: 'columbia';
-  src: local('columbia-serial-bold'), url(./fonts/columbia-serial-bold.ttf) format('ttf');
+  font-family: "columbia";
+  src: local("columbia-serial-bold"),
+    url(./fonts/columbia-serial-bold.ttf) format("ttf");
 }
 
 .header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-  border: 2px solid #40404C;
+  border: 2px solid #40404c;
   height: 84px;
   width: 100%;
   padding: 0 106px;
 }
 
-
-
 .name {
-  font-family: 'bluu-next';
-  color: #40404C;
+  font-family: "bluu-next";
+  color: #40404c;
   font-size: "20px";
 }
 
-.card {
-  width: 541px;
-  height: 790px;
-  border: 2px solid blue;
+.works {
+  /* border: 5px solid blue; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 11rem;
+  grid-template-areas:
+    "works-title works-title works-description works-description"
+    "works-image works-image works-image works-image";
 }
 
-.cardName {
+.works-list {
+  /* border: 5px solid green; */
+  padding: 0 6.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "left-col right-col";
+  grid-column-gap: 8rem;
+  grid-row-gap: 8rem;
+}
+
+.left {
+  grid-area: left-col;
+}
+
+.right {
+  grid-area: right-col;
+}
+
+.title {
+  grid-area: works-title;
+
+  font-family: Columbia-Serial;
+  font-style: normal;
   font-weight: bold;
   font-size: 44px;
   line-height: 53px;
-  font-family: "columbia";
-color: #40404C;
-  width: 220px;
-
-  border: 2px solid green;
+  color: #40404C;
 }
-.cardDescription {
+
+.description {
+  grid-area: works-description;
+
+  font-family: Circe;
+  font-style: normal;
   font-weight: 350;
   font-size: 18px;
   line-height: 27px;
-
-  width: 244px;
-
-  border: 2px solid red;
+  color: #40404C;
 }
 
-.info {
-  display: flex;
-  justify-content: space-between;
+.image {
+  grid-area: works-image;
 }
 
-.cardImg {
-  height: 100%;
-  width: 100%;
-  border: 5px solid green;
-
-}
-
-.cardImg img {
-  height: 100%;
-  width: 100%;
+.image img {
   object-fit: cover;
   object-position: center;
-  border: 6px solid blue;
-
+  height: 100%;
+  width: 100%;
 }
