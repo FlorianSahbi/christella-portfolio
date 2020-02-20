@@ -7,20 +7,86 @@
   src: local("bluu"), url(./fonts/BluuNext-Titling.otf) format("otf");
 }
 
+/* @font-face {
+  font-family: "Columbia-Serial";
+  src: url(./fonts/columbia-serial-bold.ttf) format("ttf");
+} */
+
 @font-face {
-  font-family: "columbia";
-  src: local("columbia-serial-bold"),
-    url(./fonts/columbia-serial-bold.ttf) format("ttf");
+  font-family: "Columbia-Serial";
+  src: local("Columbia-Serial"),
+    url(./fonts/columbia-serial-bold.ttf) format("truetype");
 }
 
-.header {
+@font-face {
+  font-family: "Circe";
+  src: local("Circe"), url(./fonts/circe.woff) format("woff");
+}
+
+.separator {
+  height: 25vh;
   display: flex;
-  justify-content: flex-start;
+  padding: 0 6.5rem;
+  font-family: "Columbia-Serial";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 65px;
+  color: #000000;
+}
+
+.underscor {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 3px solid #da004a;
+  width: 27px;
+  height: 1px;
+}
+
+header {
+  /* border: 5px solid green; */
+  height: 80vh;
+  padding: 0 6.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "left-header right-header";
+  /* grid-column-gap: 8rem;
+  grid-row-gap: 8rem; */
+}
+
+.leftheader {
+  /* border: 2px solid blue; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  border: 2px solid #40404c;
-  height: 84px;
-  width: 100%;
-  padding: 0 106px;
+  grid-area: left-header;
+
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 38px;
+  line-height: 58px;
+}
+.righheader {
+  /* border: 2px solid green; */
+  grid-area: right-header;
+}
+
+.highlightText {
+  color: #da004a;
+  font-weight: bold;
+  font-family: "Columbia-Serial";
+}
+
+header p {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 38px;
+  line-height: 58px;
+  color: #40404c;
 }
 
 .name {
@@ -61,23 +127,23 @@
 .title {
   grid-area: works-title;
 
-  font-family: Columbia-Serial;
+  font-family: "Columbia-Serial";
   font-style: normal;
   font-weight: bold;
   font-size: 44px;
   line-height: 53px;
-  color: #40404C;
+  color: #40404c;
 }
 
 .description {
   grid-area: works-description;
 
-  font-family: Circe;
+  font-family: "Circe";
   font-style: normal;
   font-weight: 350;
   font-size: 18px;
   line-height: 27px;
-  color: #40404C;
+  color: #40404c;
 }
 
 .image {

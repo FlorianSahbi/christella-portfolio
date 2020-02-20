@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import './fonts/columbia-serial-bold.ttf';
+import './fonts/circe.woff';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

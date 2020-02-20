@@ -31,7 +31,7 @@ const Footer = () => {
   );
 };
 
-const Header = () => {
+const Menu = () => {
   return (
     <div className="header">
       <div className="name">
@@ -45,7 +45,9 @@ const Card = ({ name, description, img }) => {
   return (
     <div className="works">
       <div className="title">{name}</div>
-      <div className="description">{description} <p>Voir le projet</p></div>
+      <div className="description">
+        {description} <p>Voir le projet</p>
+      </div>
       <div className="image">
         <img src={img} alt="ok" />
       </div>
@@ -53,19 +55,40 @@ const Card = ({ name, description, img }) => {
   );
 };
 
+const Header = props => {
+  return (
+    <header>
+      <div className="leftheader">
+        <p>
+          Hello,
+          <br />
+          Je m’appelle <span className="highlightText">Christella</span> et je
+          suis une UX / UI designer qui travaille actuellement chez Brainsonic à
+          Paris, je suis aussi étudiante en troisième année à HÉTIC.
+        </p>
+        <p>
+          En parallèle, je fais du bénévolat pour l’ association Braillenet.
+        </p>
+      </div>
+      <div className="rightheader" />
+    </header>
+  );
+};
+
+const TitleSeparator = props => {
+  return (
+    <div className="separator">
+      <div class="underscor" />Travaux
+    </div>
+  );
+};
+
 function App() {
   return (
     <section>
+      <Menu />
       <Header />
-      <p>
-        Hello, Je m’ appelle Christella et je suis une UX / UI designer qui
-        travaille actuellement chez Brainsonic à Paris, je suis aussi étudiante
-        en troisième année à HÉTIC.{" "}
-      </p>{" "}
-      <p>
-        {" "}
-        En parallèle, je fais du bénévolat pour l’ association Braillenet.{" "}
-      </p>{" "}
+      <TitleSeparator />
       <section className="works-list">
         <Card
           className="left"
@@ -85,7 +108,7 @@ function App() {
           className="left"
           name="Futuroscope"
           description="Refont intégrale du site web de réservation du parc d’attraction, desktop et mobile."
-          img={futuroscope}
+          img={apesAsso}
         />{" "}
         <Card
           className="right"
@@ -93,7 +116,7 @@ function App() {
           description="Refont intégrale du site web de l’association desktop, tablet et mobile. Parcours utilisateurs
         du funnel réservation du billet.
         "
-          img={apesAsso}
+          img={futuroscope}
         />{" "}
       </section>
       <Footer />
