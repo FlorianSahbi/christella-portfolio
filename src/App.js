@@ -6,6 +6,16 @@ import formulaOne from "./images/formula-1.jpeg";
 import futuroscope from "./images/futuroscope.jpeg";
 import sncf from "./images/sncf-inoui.jpeg";
 
+const Loader = () => {
+  return (
+    <section className="loader">
+      <div className="loader-name">
+        Christella Levieux <span className="dot-loader">.</span>
+      </div>
+    </section>
+  );
+};
+
 const Footer = () => {
   return (
     <div className="header">
@@ -33,11 +43,15 @@ const Footer = () => {
 
 const Menu = () => {
   return (
-    <div className="header">
-      <div className="name">
-        Christella Levieux <span style={{ color: "red" }}> . </span>{" "}
-      </div>{" "}
-    </div>
+    <nav>
+      <div className="nav-name">
+        Christella Levieux <span className="dot-nav">.</span>
+      </div>
+      <div className="nav-item">
+        <span style={{ marginRight: "1.5rem" }}>Travaux</span>
+        <span>À propos</span>
+      </div>
+    </nav>
   );
 };
 
@@ -78,49 +92,53 @@ const Header = props => {
 const TitleSeparator = props => {
   return (
     <div className="separator">
-      <div class="underscor" />Travaux
+      <div class="underscor" />
+      Travaux
     </div>
   );
 };
 
 function App() {
   return (
-    <section>
-      <Menu />
-      <Header />
-      <TitleSeparator />
-      <section className="works-list">
-        <Card
-          className="left"
-          name="SNCF Inoui"
-          description="Web-app responsive et social game permettant aux agents  de se former sur l’ensemble des applications client SNCF."
-          img={sncf}
-        />{" "}
-        <Card
-          className="right"
-          name="Formula 1"
-          description="Refont intégrale du site web de billeterie desktop, tablet et mobile. Parcours utilisateurs
+    <>
+      <Loader />
+      <section>
+        <Menu />
+        <Header />
+        <TitleSeparator />
+        <section className="works-list">
+          <Card
+            className="left"
+            name="SNCF Inoui"
+            description="Web-app responsive et social game permettant aux agents  de se former sur l’ensemble des applications client SNCF."
+            img={sncf}
+          />{" "}
+          <Card
+            className="right"
+            name="Formula 1"
+            description="Refont intégrale du site web de billeterie desktop, tablet et mobile. Parcours utilisateurs
         du funnel réservation du billet.
         "
-          img={formulaOne}
-        />{" "}
-        <Card
-          className="left"
-          name="Futuroscope"
-          description="Refont intégrale du site web de réservation du parc d’attraction, desktop et mobile."
-          img={apesAsso}
-        />{" "}
-        <Card
-          className="right"
-          name="Apes Asso"
-          description="Refont intégrale du site web de l’association desktop, tablet et mobile. Parcours utilisateurs
+            img={formulaOne}
+          />{" "}
+          <Card
+            className="left"
+            name="Futuroscope"
+            description="Refont intégrale du site web de réservation du parc d’attraction, desktop et mobile."
+            img={apesAsso}
+          />{" "}
+          <Card
+            className="right"
+            name="Apes Asso"
+            description="Refont intégrale du site web de l’association desktop, tablet et mobile. Parcours utilisateurs
         du funnel réservation du billet.
         "
-          img={futuroscope}
-        />{" "}
+            img={futuroscope}
+          />{" "}
+        </section>
+        <Footer />
       </section>
-      <Footer />
-    </section>
+    </>
   );
 }
 

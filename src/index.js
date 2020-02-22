@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import './fonts/columbia-serial-bold.ttf';
 import './fonts/circe.woff';
+import './fonts/BluuNext-Bold.otf';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 

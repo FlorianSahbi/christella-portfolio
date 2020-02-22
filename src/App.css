@@ -3,14 +3,9 @@
 }
 
 @font-face {
-  font-family: "bluu-next";
-  src: local("bluu"), url(./fonts/BluuNext-Titling.otf) format("otf");
+  font-family: "Bluu Next";
+  src: local("Bluu Next"), url(./fonts/BluuNext-Bold.otf) format("otf");
 }
-
-/* @font-face {
-  font-family: "Columbia-Serial";
-  src: url(./fonts/columbia-serial-bold.ttf) format("ttf");
-} */
 
 @font-face {
   font-family: "Columbia-Serial";
@@ -21,6 +16,86 @@
 @font-face {
   font-family: "Circe";
   src: local("Circe"), url(./fonts/circe.woff) format("woff");
+}
+
+.loader {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-name {
+  /* border: 2px solid green; */
+  width: 100%;
+  grid-area: left-nav;
+  font-family: "Bluu Next";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #000;
+}
+
+.dot-loader {
+  font-family: "Bluu Next";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #da004a;
+}
+
+nav {
+  padding: 0 6.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "left-nav right-nav";
+
+  height: 5rem;
+  /* border: 2px solid; */
+  display: flex;
+  align-items: center;
+}
+
+.nav-name {
+  /* border: 2px solid green; */
+  width: 100%;
+  grid-area: left-nav;
+  font-family: "Bluu Next";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #40404c;
+}
+
+.nav-item {
+  /* border: 2px solid red; */
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  grid-area: right-nav;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #da004a;
+}
+
+.dot-nav {
+  font-family: "Bluu Next";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #da004a;
 }
 
 .separator {
