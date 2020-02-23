@@ -18,6 +18,67 @@
   src: local("Circe"), url(./fonts/circe.woff) format("woff");
 }
 
+.footer-name {
+  /* border: 2px solid green; */
+  margin-right: 5rem;
+  grid-area: left-nav;
+  font-family: "Bluu Next";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #40404C;
+}
+
+.dot-footer {
+  font-family: "Bluu Next";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #da004a;
+}
+
+.more {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+  font-family: "Circe";
+  font-style: normal;
+  width: fit-content;
+  font-weight: bold;
+  color: #40404C;
+}
+
+.more::after {
+  color: #40404C;
+  content: "";
+  border: 1px solid  #40404C;
+  width: 37px;
+  font-family: "Circe";
+  font-style: normal;
+  color: green;
+  transition: all 0.3s ease;
+}
+
+.more:hover::after {
+  transition: all 0.3s ease;
+  content: "";
+  font-family: "Circe";
+  font-style: normal;
+  border: 1px solid #E10456;;
+  width: 100%;
+  color: green;
+}
+
+.more:hover {
+  font-family: "Circe";
+  font-style: normal;
+  color: #E10456;
+  cursor: pointer;
+}
+
 .loader {
   height: 100vh;
   width: 100vw;
@@ -48,6 +109,19 @@
   color: #da004a;
 }
 
+footer {
+  border-top: 1px solid #DDD2CE;
+  height: 15vh;
+  padding: 0 6.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "left-footer right-footer";
+  /* border: 2px solid; */
+  display: flex;
+  align-items: center;
+}
+
 nav {
   padding: 0 6.5rem;
   display: grid;
@@ -55,11 +129,30 @@ nav {
   grid-template-rows: auto;
   grid-template-areas: "left-nav right-nav";
 
-  height: 5rem;
+  height: 10vh;
   /* border: 2px solid; */
   display: flex;
   align-items: center;
 }
+
+.leftnav {
+  grid-area: left-nav;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+.rightnav {
+  grid-area: right-nav;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* border: 2px solid blue; */
+  width: 100%;
+}
+
 
 .nav-name {
   /* border: 2px solid green; */
@@ -120,7 +213,7 @@ nav {
 
 header {
   /* border: 5px solid green; */
-  height: 80vh;
+  height: 90vh;
   padding: 0 6.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -182,7 +275,7 @@ header p {
 
 .works-list {
   /* border: 5px solid green; */
-  padding: 0 6.5rem;
+  padding: 0 6.5rem 5rem 6.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
