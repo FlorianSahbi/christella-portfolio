@@ -28,7 +28,7 @@
   font-size: 20px;
   line-height: 24px;
   text-align: center;
-  color: #40404C;
+  color: #40404c;
 }
 
 .dot-footer {
@@ -48,13 +48,13 @@
   font-style: normal;
   width: fit-content;
   font-weight: bold;
-  color: #40404C;
+  color: #40404c;
 }
 
 .more::after {
-  color: #40404C;
+  color: #40404c;
   content: "";
-  border: 1px solid  #40404C;
+  border: 1px solid #40404c;
   width: 37px;
   font-family: "Circe";
   font-style: normal;
@@ -67,7 +67,7 @@
   content: "";
   font-family: "Circe";
   font-style: normal;
-  border: 1px solid #E10456;;
+  border: 1px solid #e10456;
   width: 100%;
   color: green;
 }
@@ -75,7 +75,7 @@
 .more:hover {
   font-family: "Circe";
   font-style: normal;
-  color: #E10456;
+  color: #e10456;
   cursor: pointer;
 }
 
@@ -110,7 +110,7 @@
 }
 
 footer {
-  border-top: 1px solid #DDD2CE;
+  border-top: 1px solid #ddd2ce;
   height: 15vh;
   padding: 0 6.5rem;
   display: grid;
@@ -152,7 +152,6 @@ nav {
   /* border: 2px solid blue; */
   width: 100%;
 }
-
 
 .nav-name {
   /* border: 2px solid green; */
@@ -323,4 +322,31 @@ header p {
   object-position: center;
   height: 100%;
   width: 100%;
+}
+
+.cv {
+  padding: 0 6.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "left-cv right-cv";
+  /* border: 2px solid; */
+  display: flex;
+  align-items: center;
+}
+
+.photo-cv {
+  grid-area: left-cv;
+}
+
+.photo-xp {
+  grid-area: right-cv;
+  border: 2px solid green;
+}
+
+.photo-cv img {
+  height: 100%;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
 }

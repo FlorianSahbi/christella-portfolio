@@ -6,6 +6,7 @@ import apesAsso from "./images/apes-asso.png";
 import formulaOne from "./images/formula-1.jpeg";
 import futuroscope from "./images/futuroscope.jpeg";
 import sncf from "./images/sncf-inoui.jpeg";
+import pp from "./images/pp.jpg";
 
 const Loader = () => {
   return (
@@ -28,7 +29,6 @@ const Footer = () => {
       </div>
       <div className="rightnav">
         <a
-
           href="https://twitter.com/christella_kl/"
           target="_blank"
           rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const Footer = () => {
           Twitter{" "}
         </a>{" "}
         <a
-        style={{marginLeft: "2.5rem", color: "#40404C"}}
+          style={{ marginLeft: "2.5rem", color: "#40404C" }}
           href="https://www.linkedin.com/in/christella-levieux/"
           target="_blank"
           rel="noopener noreferrer"
@@ -102,11 +102,11 @@ const Header = props => {
   );
 };
 
-const TitleSeparator = props => {
+const TitleSeparator = ({ title }) => {
   return (
     <div className="separator">
       <div class="underscor" />
-      Travaux
+      {title}
     </div>
   );
 };
@@ -118,7 +118,7 @@ function App() {
       <section>
         <Menu />
         <Header />
-        <TitleSeparator />
+        <TitleSeparator title="Travaux" />
         <section className="works-list">
           <Card
             className="left"
@@ -148,6 +148,23 @@ function App() {
         "
             img={futuroscope}
           />{" "}
+        </section>
+        <TitleSeparator title="CV" />
+        <section className="cv">
+          <div className="photo-cv">
+            <img src={pp} alt="oko" />
+          </div>
+          <div className="photo-xp">
+            <h2>Expériences</h2>
+            <div>Expériences</div>
+            <div>Expériences</div>
+            <h2>Formations</h2>
+            <div>Formation</div>
+            <div>Formation</div>
+            <h2>Contact</h2>
+            <div>Icone</div>
+            <div>Icone</div>
+          </div>
         </section>
         <Footer />
       </section>
