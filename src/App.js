@@ -6,7 +6,6 @@ import apesAsso from "./images/apes-asso.png";
 import formulaOne from "./images/formula-1.jpeg";
 import futuroscope from "./images/futuroscope.jpeg";
 import sncf from "./images/sncf-inoui.jpeg";
-import pp from "./images/pp.jpg";
 
 const Loader = () => {
   return (
@@ -25,7 +24,7 @@ const Footer = () => {
         <div className="footer-name">
           Christella Levieux <span className="dot-footer">.</span>
         </div>
-        <div className="name"> christella.levieux @icloud.com </div>{" "}
+        <div className="name"> christella.levieux @icloud.com </div>
       </div>
       <div className="rightnav">
         <a
@@ -34,8 +33,8 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="name"
         >
-          Twitter{" "}
-        </a>{" "}
+          Twitter
+        </a>
         <a
           style={{ marginLeft: "2.5rem", color: "#40404C" }}
           href="https://www.linkedin.com/in/christella-levieux/"
@@ -43,8 +42,8 @@ const Footer = () => {
           rel="noopener noreferrer"
           className="name"
         >
-          Linkedin{" "}
-        </a>{" "}
+          Linkedin
+        </a>
       </div>
     </footer>
   );
@@ -120,39 +119,41 @@ function App() {
         <Header />
         <TitleSeparator title="Travaux" />
         <section className="works-list">
-          <Card
-            className="left"
-            name="SNCF Inoui"
-            description="Web-app responsive et social game permettant aux agents  de se former sur l’ensemble des applications client SNCF."
-            img={sncf}
-          />{" "}
-          <Card
-            className="right"
-            name="Formula 1"
-            description="Refont intégrale du site web de billeterie desktop, tablet et mobile. Parcours utilisateurs
-        du funnel réservation du billet.
-        "
-            img={formulaOne}
-          />{" "}
-          <Card
-            className="left"
-            name="Futuroscope"
-            description="Refont intégrale du site web de réservation du parc d’attraction, desktop et mobile."
-            img={apesAsso}
-          />{" "}
-          <Card
-            className="right"
-            name="Apes Asso"
-            description="Refont intégrale du site web de l’association desktop, tablet et mobile. Parcours utilisateurs
-        du funnel réservation du billet.
-        "
-            img={futuroscope}
-          />{" "}
+            <Card
+              className="left"
+              name="SNCF Inoui"
+              description="Web-app responsive et social game permettant aux agents  de se former sur l’ensemble des applications client SNCF."
+              img={sncf}
+            />
+            <Card
+              className="right"
+              name="Formula 1"
+              description="Refont intégrale du site web de billeterie desktop, tablet et mobile. Parcours utilisateurs
+            du funnel réservation du billet.
+            "
+              img={formulaOne}
+            />
+            <Card
+              className="left"
+              name="Futuroscope"
+              description="Refont intégrale du site web de réservation du parc d’attraction, desktop et mobile."
+              img={apesAsso}
+            />
+            <Card
+              className="right"
+              name="Apes Asso"
+              description="Refont intégrale du site web de l’association desktop, tablet et mobile. Parcours utilisateurs
+            du funnel réservation du billet.
+            "
+              img={futuroscope}
+            />
         </section>
         <TitleSeparator title="CV" />
         <section className="cv">
           <div className="photo-cv">
-            <img src={pp} alt="oko" />
+           <p>J’ai travaillé deux ans en agence digital, là où j’ai pu analyser les problèmatiques de différents clients, startups ou grands groupes sur des projets divers tel que des applications, des sites web et des produits. Afin d’accompagner au mieux ces clients, j’ai pu mettre en place des propositions de méthodologie et de concepts UX en élaborant des parcours et tests utilisateurs, des audits d’accessibilité numérique ou encore en effectuant de l’observation terrain.</p>
+           <p>À côté de mon travail et de mes êtudes, j’ai pu proposer mes services en ergonomie à une association luttant contre le décrochage scolaire, une médiathèque et à l’association Braillenet, tous les week-ends.</p>
+           <p>J’ai 21 ans et je suis passionnée de linguistique, de littérature russe et de patinage artistique. Je m’intéresse tout particulièrement au domaine de l’éducation de la santé. Lorsque j’ai un peu de temps libre, je joue à animal crossing.</p>
           </div>
           <div className="photo-xp">
             <h2>Expériences</h2>
