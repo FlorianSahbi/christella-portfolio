@@ -1,0 +1,65 @@
+nav {
+  padding: 0 6.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "left-nav right-nav";
+  height: 15vh;
+  display: flex;
+  align-items: center;
+}
+
+.leftnav {
+  grid-area: left-nav;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.rightnav {
+  grid-area: right-nav;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.nav-name {
+  width: 100%;
+  grid-area: left-nav;
+  font-family: "Bluu Next";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #40404c;
+}
+
+.nav-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  grid-area: right-nav;
+  font-family: Circe;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #40404c;
+  cursor: pointer;
+}
+
+.nav-item span:hover {
+  color: #da004a;
+}
+
+.dot-nav {
+  font-family: "Bluu Next";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #da004a;
+}

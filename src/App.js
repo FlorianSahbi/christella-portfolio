@@ -52,44 +52,6 @@ function App() {
             img={futuroscope}
           />
         </section>
-        <TitleSeparator title="CV" />
-        <section className="cv">
-          <div className="photo-cv">
-            <p>
-              J’ai travaillé deux ans en agence digital, là où j’ai pu analyser
-              les problèmatiques de différents clients, startups ou grands
-              groupes sur des projets divers tel que des applications, des sites
-              web et des produits. Afin d’accompagner au mieux ces clients, j’ai
-              pu mettre en place des propositions de méthodologie et de concepts
-              UX en élaborant des parcours et tests utilisateurs, des audits
-              d’accessibilité numérique ou encore en effectuant de l’observation
-              terrain.
-            </p>
-            <p>
-              À côté de mon travail et de mes êtudes, j’ai pu proposer mes
-              services en ergonomie à une association luttant contre le
-              décrochage scolaire, une médiathèque et à l’association
-              Braillenet, tous les week-ends.
-            </p>
-            <p>
-              J’ai 21 ans et je suis passionnée de linguistique, de littérature
-              russe et de patinage artistique. Je m’intéresse tout
-              particulièrement au domaine de l’éducation de la santé. Lorsque
-              j’ai un peu de temps libre, je joue à animal crossing.
-            </p>
-          </div>
-          <div className="photo-xp">
-            <h2>Expériences</h2>
-            <div>Expériences</div>
-            <div>Expériences</div>
-            <h2>Formations</h2>
-            <div>Formation</div>
-            <div>Formation</div>
-            <h2>Contact</h2>
-            <div>Icone</div>
-            <div>Icone</div>
-          </div>
-        </section>
         <Footer />
       </section>
     </>

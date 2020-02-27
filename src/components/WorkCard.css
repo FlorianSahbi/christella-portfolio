@@ -1,0 +1,50 @@
+.works {
+  /* border: 5px solid blue; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 11rem;
+  grid-template-areas:
+    "works-title works-title works-description works-description"
+    "works-image works-image works-image works-image";
+}
+
+.title {
+  /* border: 2px solid red; */
+
+  grid-area: works-title;
+  font-family: "Columbia-Serial";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 53px;
+  color: #40404c;
+}
+
+.description {
+  margin-left: 10%;
+  grid-area: works-description;
+  width: 90%;
+  /* border: 2px solid blue; */
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 27px;
+  color: #40404c;
+}
+
+.image {
+  grid-area: works-image;
+  height: 38rem;
+}
+
+.image img {
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.right {
+  border : "5px dotted green";
+}

@@ -1,0 +1,24 @@
+.typo {
+  height: fit-content;
+  display: flex;
+  align-items: baseline;
+}
+.separator {
+  height: 25vh;
+  display: flex;
+  padding: 0 6.5rem;
+  font-family: "Columbia-Serial";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 65px;
+  color: #000000;
+}
+
+.underscor {
+  display: flex;
+  justify-content: flex-end;
+  border-bottom: 3px solid #da004a;
+  width: 27px;
+  height: 1px;
+}

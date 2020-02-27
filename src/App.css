@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #FCF9F4;
+  background: #fcf9f4;
 }
 
 @font-face {
@@ -20,28 +20,6 @@ body {
 @font-face {
   font-family: "Circe";
   src: local("Circe"), url(./fonts/circe.woff) format("woff");
-}
-
-.footer-name {
-  /* border: 2px solid green; */
-  margin-right: 5rem;
-  grid-area: left-nav;
-  font-family: "Bluu Next";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  color: #40404c;
-}
-
-.dot-footer {
-  font-family: "Bluu Next";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  color: #da004a;
 }
 
 .more {
@@ -83,174 +61,6 @@ body {
   cursor: pointer;
 }
 
-.loader {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loader-name {
-  /* border: 2px solid green; */
-  width: 100%;
-  grid-area: left-nav;
-  font-family: "Bluu Next";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  text-align: center;
-  color: #000;
-}
-
-.dot-loader {
-  font-family: "Bluu Next";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  color: #da004a;
-}
-
-footer {
-  border-top: 1px solid #ddd2ce;
-  height: 27vh;
-  padding: 0 6.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "left-footer right-footer";
-  /* border: 2px solid; */
-  display: flex;
-  align-items: center;
-}
-
-nav {
-  padding: 0 6.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "left-nav right-nav";
-
-  height: 10vh;
-  /* border: 2px solid; */
-  display: flex;
-  align-items: center;
-}
-
-.leftnav {
-  grid-area: left-nav;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  /* border: 2px solid red; */
-  width: 100%;
-}
-
-.rightnav {
-  grid-area: right-nav;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  /* border: 2px solid blue; */
-  width: 100%;
-}
-
-.nav-name {
-  /* border: 2px solid green; */
-  width: 100%;
-  grid-area: left-nav;
-  font-family: "Bluu Next";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  color: #40404c;
-}
-
-.nav-item {
-  /* border: 2px solid red; */
-  width: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  grid-area: right-nav;
-  font-family: Circe;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  color: #da004a;
-}
-
-.dot-nav {
-  font-family: "Bluu Next";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
-  color: #da004a;
-}
-
-.separator {
-  height: 25vh;
-  display: flex;
-  padding: 0 6.5rem;
-  font-family: "Columbia-Serial";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 54px;
-  line-height: 65px;
-  color: #000000;
-}
-
-.underscor {
-  display: flex;
-  justify-content: flex-end;
-  border-bottom: 3px solid #da004a;
-  width: 27px;
-  height: 1px;
-}
-
-header {
-  /* border: 5px solid green; */
-  height: 90vh;
-  padding: 0 6.5rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "left-header right-header";
-  /* grid-column-gap: 8rem;
-  grid-row-gap: 8rem; */
-}
-
-.leftheader {
-  /* border: 2px solid blue; */
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  grid-area: left-header;
-
-  font-family: "Circe";
-  font-style: normal;
-  font-weight: 350;
-  font-size: 38px;
-  line-height: 58px;
-}
-.righheader {
-  /* border: 2px solid green; */
-  grid-area: right-header;
-}
-
-.highlightText {
-  color: #da004a;
-  font-weight: bold;
-  font-family: "Columbia-Serial";
-}
-
 header p {
   font-family: "Circe";
   font-style: normal;
@@ -264,16 +74,6 @@ header p {
   font-family: "bluu-next";
   color: #40404c;
   font-size: "20px";
-}
-
-.works {
-  /* border: 5px solid blue; */
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 11rem;
-  grid-template-areas:
-    "works-title works-title works-description works-description"
-    "works-image works-image works-image works-image";
 }
 
 .works-list {
@@ -295,39 +95,6 @@ header p {
   grid-area: right-col;
   margin-top: 5rem;
   border: 2px solid blue;
-}
-
-.title {
-  grid-area: works-title;
-
-  font-family: "Columbia-Serial";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 44px;
-  line-height: 53px;
-  color: #40404c;
-}
-
-.description {
-  grid-area: works-description;
-
-  font-family: "Circe";
-  font-style: normal;
-  font-weight: 350;
-  font-size: 18px;
-  line-height: 27px;
-  color: #40404c;
-}
-
-.image {
-  grid-area: works-image;
-}
-
-.image img {
-  object-fit: cover;
-  object-position: center;
-  height: 100%;
-  width: 100%;
 }
 
 .cv {
