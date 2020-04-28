@@ -8,6 +8,13 @@ const style = {
     fontSize: "16px",
     lineHeight: "19px",
   },
+  titleCase: {
+    fontFamily: "Columbia-Serial",
+    fontStyle: "normal",
+    fontWeight: "bold",
+    fontSize: "18px",
+    lineHeight: "22px",
+  },
   title: {
     fontFamily: "Circe",
     fontStyle: "normal",
@@ -21,6 +28,13 @@ const style = {
     fontWeight: "bold",
     fontSize: "14px",
     lineHeight: "21px",
+  },
+  subtitleCase: {
+    fontFamily: "Circe",
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: "12px",
+    lineHeight: "18px",
   }
 }
 

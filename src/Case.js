@@ -1,9 +1,12 @@
 import React from "react";
+import Typography from "./components/atoms/Typography";
 
 const gridContainer = {
 
-  height: "100vh",
-  width: "100vw",
+  height: "595px",
+  width: "842px",
+
+  backgroundColor: "#fff",
 
   display: "grid",
   gridTemplateColumns: "1fr 1fr 1fr 1fr",
@@ -40,37 +43,29 @@ function CaseElem() {
     <div style={gridContainer} className="grid-container">
 
       <div style={titleCase} className="title-case">
-        <p className="title">SNCF - INOUI TGV</p>
-        <p>Application interne “Battle Inoui”</p>
+        <Typography type="titleCase">SNCF - INOUI TGV</Typography>
+        <Typography type="subtitleCase">Application interne “Battle Inoui”</Typography>
       </div>
 
       <div style={issueCase} className="issue-case">
-        <p className="title">Problème</p>
-        <p>
-          Depuis quelques années la SNCF a multiplié les services proposés à ses voyageurs, mais elle a également remarqué que ses collaborateurs en gare rencontraient des difficultés à accompagner les clients sur les différents applications SNCF (Oui SNCF, Voyages SNCF, TGV pro..).
-        </p>
-        <p>
-          Comment former ces collaborateurs de manière rapide et efficace à l’ensemble des applications ?
-        </p>
+        <Typography type="titleH1">Problème</Typography>
+        <Typography type="subtitleCase">Depuis quelques années la SNCF a multiplié les services proposés à ses voyageurs, mais elle a également remarqué que ses collaborateurs en gare rencontraient des difficultés à accompagner les clients sur les différents applications SNCF (Oui SNCF, Voyages SNCF, TGV pro..).</Typography>
+        <Typography type="subtitleCase">Comment former ces collaborateurs de manière rapide et efficace à l’ensemble des applications ?</Typography>
       </div>
 
       <div style={solutionCase} className="solution-case">
-        <p className="title">Solution</p>
-        <p>
-          Les collaborateurs SNCF, répartis en deux équipes, s’affrontent via un serious game. À l’aide d’une web-app responsive et d’un dispositif projeté sur écran géant , ils doivent faire face à divers scénarios possibles sur l’ensemble des applications client SNCF tels que trouver le calendrier des prix ou encore acheter un billet jeune sur Oui SNCF.
-        </p>
-        <p>
-          L’équipe ayant fini le serious game en premier remporte la victoire.
-        </p>
+        <Typography type="titleH1">Solution</Typography>
+        <Typography type="subtitleCase">Les collaborateurs SNCF, répartis en deux équipes, s’affrontent via un serious game. À l’aide d’une web-app responsive et d’un dispositif projeté sur écran géant , ils doivent faire face à divers scénarios possibles sur l’ensemble des applications client SNCF tels que trouver le calendrier des prix ou encore acheter un billet jeune sur Oui SNCF.</Typography>
+        <Typography type="subtitleCase">L’équipe ayant fini le serious game en premier remporte la victoire.</Typography>
       </div>
 
       <div style={miscCase} className="misc-case">
-        <p className="title">Team</p>
-        <p>Arthur Bosquette et Thomas Audoin</p>
-        <p className="title">Rôle</p>
-        <p>UX/UI designer </p>
-        <p className="title">Outils</p>
-        <p>Axure (Wireframe), Adobe XD (UI), Invision (Prototype).</p>
+        <Typography type="titleH1">Team</Typography>
+        <Typography type="subtitleCase">Arthur Bosquette et Thomas Audoin</Typography>
+        <Typography type="titleH1">Rôle</Typography>
+        <Typography type="subtitleCase">UX/UI designer</Typography>
+        <Typography type="titleH1">Outils</Typography>
+        <Typography type="subtitleCase">Axure (Wireframe), Adobe XD (UI), Invision (Prototype).</Typography>
       </div>
     </div>
   )
